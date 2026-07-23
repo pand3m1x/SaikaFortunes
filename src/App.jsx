@@ -3,6 +3,8 @@ import { Routes, Route } from "react-router-dom";
 
 import StarFortune from "./pages/starFortune.jsx";
 import SakuraFortune from "./pages/sakuraFortune.jsx";
+import MoonFortune from "./pages/moonFortune.jsx";
+import CloudFortune from "./pages/cloudFortune.jsx";
 
 
 function App() {
@@ -12,6 +14,8 @@ function App() {
       <Routes>
         <Route path="/starfortune" element={<StarFortune />}></Route>
         <Route path="/sakurafortune" element={<SakuraFortune />}></Route>
+        <Route path="/moonfortune" element={<MoonFortune />}></Route>
+        <Route path="/cloudfortune" element={<CloudFortune />}></Route>
       </Routes>
     </>
   )
