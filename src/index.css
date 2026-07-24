@@ -1,6 +1,6 @@
-/*font's not working*/
+/* font's not working*/ 
 
-/* .galdeano-regular {
+ /* .galdeano-regular {
   font-family: "Galdeano", sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -10,4 +10,18 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Galdeano", sans-serif;
   font-weight: 400;
   font-style: normal;
-} */
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Galdeano&display=swap'); */
+
+.quarter-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+@media (max-width: 768px) {
+  .quarter-grid {
+    grid-template-columns: 1fr;
+  }
+}

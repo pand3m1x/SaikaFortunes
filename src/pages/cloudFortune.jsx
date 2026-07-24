@@ -6,20 +6,20 @@ import TeaFlavor from "../components/TeaFlavor";
 
 
 function CloudFortune() {
-  
+
   return (
     <>
-      <div id="fortune-container" style={{ display: 'flex', 
+      <div className="fortune-container" style={{ display: 'flex', 
                                            flexDirection: 'column', 
                                            alignItems: 'center', 
                                            gap: '10px', 
                                            border: '1px solid green' }}>
-        <div id="main-fortune" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', border: '1px solid red' }}>
+        <div className="main-fortune" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', border: '1px solid red' }}>
           <h1>Cloud Fortune</h1>
           <img src={blessCloud} alt="Blessed Cloud" style={{ width: '250px', height: 'auto' }} />
           <p>Your Cloud fortune goes here.</p>
         </div>
-        <div id="quater-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gap: '10px' }}>
+        <div className="quarter-grid" >
           <div id="tarot-card" style={{ border: '1px solid lightblue' }}>
             <TarotCard></TarotCard>
           </div>

@@ -7,17 +7,17 @@ import TeaFlavor from "../components/TeaFlavor";
 function SakuraFortune() {
   return (
   <>
-    <div id="fortune-container" style={{ display: 'flex', 
+    <div className="fortune-container" style={{ display: 'flex', 
                                          flexDirection: 'column', 
                                          alignItems: 'center', 
                                          gap: '10px', 
                                          border: '1px solid green' }}>
-      <div id="main-fortune" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', border: '1px solid red' }}>
+      <div className="main-fortune" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', border: '1px solid red' }}>
         <h1>Sakura Fortune</h1>
         <img src={blessSakura} alt="Blessed Sakura" style={{ width: '200px', height: 'auto' }} />
         <p>Your sakura fortune goes here.</p>
       </div>
-        <div id="quater-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gap: '10px' }}>
+        <div className="quarter-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gap: '10px' }}>
           <div id="tarot-card" style={{ border: '1px solid lightblue' }}>
             <TarotCard></TarotCard>
           </div>
