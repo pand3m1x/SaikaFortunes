@@ -1,6 +1,8 @@
 import blessSakura from "../assets/SakuraFortuneIMG.png";
 import CatMarking from "../components/CatMarking";
 import MoonPhase from "../components/MoonPhase";
+import TarotCard from "../components/TarotCard";
+import TeaFlavor from "../components/TeaFlavor";
 
 function SakuraFortune() {
   return (
@@ -12,13 +14,13 @@ function SakuraFortune() {
     </div>
     <div id="quater-grid">
       <div id="tarot-card">
-        
+        <TarotCard></TarotCard>
       </div>
       <div id="moon-phase">
         <MoonPhase></MoonPhase>
       </div>
       <div id="tea-taste">
-
+        <TeaFlavor></TeaFlavor>
       </div>
       <div id="cat-marking">
         <CatMarking></CatMarking>
