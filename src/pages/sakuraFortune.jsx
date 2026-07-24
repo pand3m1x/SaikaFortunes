@@ -7,23 +7,29 @@ import TeaFlavor from "../components/TeaFlavor";
 function SakuraFortune() {
   return (
   <>
-    <div id="main-fortune">
-      <h1>Sakura Fortune</h1>
-      <img src={blessSakura} alt="Blessed Sakura" style={{ width: '200px', height: 'auto' }} />
-      <p>Your sakura fortune goes here.</p>
-    </div>
-    <div id="quater-grid">
-      <div id="tarot-card">
-        <TarotCard></TarotCard>
+    <div id="fortune-container" style={{ display: 'flex', 
+                                         flexDirection: 'column', 
+                                         alignItems: 'center', 
+                                         gap: '10px', 
+                                         border: '1px solid green' }}>
+      <div id="main-fortune" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', border: '1px solid red' }}>
+        <h1>Sakura Fortune</h1>
+        <img src={blessSakura} alt="Blessed Sakura" style={{ width: '200px', height: 'auto' }} />
+        <p>Your sakura fortune goes here.</p>
       </div>
-      <div id="moon-phase">
-        <MoonPhase></MoonPhase>
-      </div>
-      <div id="tea-taste">
-        <TeaFlavor></TeaFlavor>
-      </div>
-      <div id="cat-marking">
-        <CatMarking></CatMarking>
+      <div id="quater-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gap: '10px' }}>
+        <div id="tarot-card" style={{ border: '1px solid lightblue' }}>
+          <TarotCard></TarotCard>
+        </div>
+        <div id="moon-phase" style={{ border: '1px solid lightblue' }}>
+          <MoonPhase></MoonPhase>
+        </div>
+        <div id="tea-taste" style={{ border: '1px solid lightblue' }}>
+          <TeaFlavor></TeaFlavor>
+        </div>
+        <div id="cat-marking" style={{ border: '1px solid lightblue' }}>
+          <CatMarking></CatMarking>
+        </div>
       </div>
     </div>
   </> 
