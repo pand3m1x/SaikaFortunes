@@ -1,3 +1,5 @@
+import React, { useState } from "react";
+
 import TarotCardIcon from "../assets/TarotIMG.png";
 
 function TarotCard() {
@@ -34,18 +36,20 @@ function TarotCard() {
     const randomIndex = Math.floor(Math.random() * tarotCardFortunes.length);
     return tarotCardFortunes[randomIndex];
   };
+  console.log(getRandomTarotCard());
 
   //state to hold the selected tarot card
-  const [selectedCard, setSelectedCard] = useState(null);
-  function handleDraw(){
-    setSelectedCard(getRandomTarotCard());
-  };
+  // Lazy initializer: runs getRandomTarotCard() ONCE on first render
+  const [selectedCard] = useState(() => getRandomTarotCard());
+  console.log(selectedCard);
   
   return (
     <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
       <img src={TarotCardIcon} alt="Tarot card in black and white in fancy boarder" style={{ width: '200px', height: 'auto' }} />
-      <p>Tarot Card</p>
-      <p>There are so many meanings in the cards!</p>
+      <div>
+        <h2>{selectedCard?.number}.{selectedCard?.title}</h2>
+        <p>{selectedCard?.description}</p>
+      </div>
     </div>
   );
 }
