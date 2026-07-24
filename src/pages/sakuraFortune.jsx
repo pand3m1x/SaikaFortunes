@@ -17,7 +17,7 @@ function SakuraFortune() {
         <img src={blessSakura} alt="Blessed Sakura" style={{ width: '200px', height: 'auto' }} />
         <p>Your sakura fortune goes here.</p>
       </div>
-        <div className="quarter-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gap: '10px' }}>
+        <div className="quarter-grid">
           <div id="tarot-card" style={{ border: '1px solid lightblue' }}>
             <TarotCard></TarotCard>
           </div>
