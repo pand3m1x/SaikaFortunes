@@ -46,7 +46,7 @@ function TarotCard() {
   return (
     <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
       <img src={TarotCardIcon} alt="Tarot card in black and white in fancy boarder" style={{ width: '200px', height: 'auto' }} />
-      <div>
+      <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
         <h2>{selectedCard?.number}.{selectedCard?.title}</h2>
         <p>{selectedCard?.description}</p>
       </div>
