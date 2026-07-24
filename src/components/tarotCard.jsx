@@ -36,7 +36,7 @@ function TarotCard() {
     const randomIndex = Math.floor(Math.random() * tarotCardFortunes.length);
     return tarotCardFortunes[randomIndex];
   };
-  console.log(getRandomTarotCard());
+  // console.log(getRandomTarotCard());
 
   //state to hold the selected tarot card
   // Lazy initializer: runs getRandomTarotCard() ONCE on first render
