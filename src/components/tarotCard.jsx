@@ -41,7 +41,7 @@ function TarotCard() {
   //state to hold the selected tarot card
   // Lazy initializer: runs getRandomTarotCard() ONCE on first render
   const [selectedCard] = useState(() => getRandomTarotCard());
-  console.log(selectedCard);
+  // console.log(selectedCard);
   
   return (
     <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
