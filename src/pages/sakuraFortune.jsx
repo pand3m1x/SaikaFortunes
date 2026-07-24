@@ -1,4 +1,4 @@
-import blessSakura from "../assets/blessSakura.png";
+import blessSakura from "../assets/SakuraFortuneIMG.png";
 
 function SakuraFortune() {
   return (
