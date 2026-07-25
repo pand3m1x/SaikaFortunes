@@ -10,7 +10,7 @@ function SakuraFortune() {
     <div className="fortune-container" >
       <div className="main-fortune" >
         <h1>Sakura Fortune</h1>
-        <img src={blessSakura} alt="Blessed Sakura" style={{ width: '200px', height: 'auto' }} />
+        <img src={blessSakura} alt="Sakura shape with the kanji for average luck." />
         <p>Your sakura fortune goes here.</p>
       </div>
         <div className="quarter-grid">

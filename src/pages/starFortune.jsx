@@ -10,7 +10,7 @@ function StarFortune() {
       <div className="fortune-container" >
         <div className="main-fortune" >
           <h1>Star Fortune</h1>
-          <img src={blessStar} alt="Blessed Star" style={{ width: '200px', height: 'auto' }} />
+          <img src={blessStar} alt="star shape with kanji for middle luck." />
           <p>Your star fortune goes here.</p>
         </div>
          <div className="quarter-grid">

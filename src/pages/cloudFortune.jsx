@@ -12,7 +12,7 @@ function CloudFortune() {
       <div className="fortune-container" >
         <div className="main-fortune" >
           <h1>Cloud Fortune</h1>
-          <img src={blessCloud} alt="Blessed Cloud" style={{ width: '200px', height: 'auto' }} />
+          <img src={blessCloud} alt="Cloud shape with the kanji for little luck." />
           <p>Your Cloud fortune goes here.</p>
         </div>
         <div className="quarter-grid" >

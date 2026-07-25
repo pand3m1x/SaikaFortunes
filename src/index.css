@@ -38,6 +38,11 @@ p{
   margin-bottom: 20px;
 }
 
+.main-fortune img {
+  width: 200px; 
+  height: auto;
+}
+
 .quarter-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);

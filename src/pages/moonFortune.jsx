@@ -10,7 +10,7 @@ function MoonFortune() {
     <div className="fortune-container" >
       <div className="main-fortune" >
         <h1>Moon Fortune</h1>
-        <img src={blessMoon} alt="Blessed Moon" style={{ width: '200px', height: 'auto' }} />
+        <img src={blessMoon} alt="Moon shape with kanji for best luck." />
         <p>Your moon fortune goes here.</p>
       </div>
       <div className="quarter-grid" >
