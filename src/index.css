@@ -66,6 +66,12 @@ p{
   margin-bottom: -10px;
 }
 
+.fortunes{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 @media (max-width: 768px) {
   .quarter-grid {
     grid-template-columns: 1fr;

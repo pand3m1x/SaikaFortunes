@@ -25,7 +25,7 @@ function TeaFlavor() {
   //state to hold the selected tea flavor
   const [selectedFlavor] = useState(() => getRandomTeaFlavor());
   return (
-    <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+    <div className="fortunes">
       <img src={TeaFlavorIcon} alt="Tea flavor in black and white in fancy boarder" style={{ width: '200px', height: 'auto' }} />
       <h2>{selectedFlavor?.TeaFlavor}</h2>
       <p>{selectedFlavor?.description}</p>

@@ -26,7 +26,7 @@ function CatMarking() {
   const [selectedMarking] = useState(() => getRandomCatMarking());
 
   return (
-    <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+    <div className="fortunes" >
       <img src={CatIcon} alt="Cat in black and white in fancy boarder" style={{ width: '200px', height: 'auto' }} />
       <h2>{selectedMarking?.CoatType}</h2>
       <p>{selectedMarking?.description}</p>

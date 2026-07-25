@@ -41,7 +41,7 @@ function MoonPhase() {
   const [selectedPhase] = useState(() => getRandomMoonPhase());
 
   return (
-    <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+    <div className="fortunes">
       <img src={MoonPhaseIcon} alt="phases of the moon in black and white in fancy boarder" style={{ width: '200px', height: 'auto' }} />
       <h2>{selectedPhase?.phase}</h2>
       <p>{selectedPhase?.description}</p>
