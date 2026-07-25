@@ -8,9 +8,10 @@
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "Galdeano", sans-serif;
-  font-weight: 400;
+  font-weight: 500;
   font-style: normal;
   margin: 5px;
+  margin-bottom: 10px;
 }
 
 p{
@@ -40,14 +41,19 @@ p{
 .quarter-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 10px;
+  gap: 20px;
 }
 
 .fortune-card {
   border: 2px solid rgba(232, 196, 241, 0.918);
-  padding: 10px;
+  width: 500px;
+  padding: 5px 20px 15px;
   text-align: center;
   border-radius: 10px;
+}
+.fortune-card img {
+  margin:0;
+  margin-bottom: -10px;
 }
 
 @media (max-width: 768px) {
