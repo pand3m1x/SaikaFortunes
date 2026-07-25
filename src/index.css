@@ -44,6 +44,7 @@ p{
   width: 200px; 
   max-width: 60vw;
   height: auto;
+  margin-top: -20px;
 }
 
 .quarter-grid {
