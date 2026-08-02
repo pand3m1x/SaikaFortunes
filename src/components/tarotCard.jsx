@@ -5,9 +5,11 @@ import TarotCardIcon from "../assets/TarotIMG.png";
 function TarotCard() {
   //array of tarot card fortunes waiting for 22 major card write ups from Dylan
   const tarotCardFortunes= [
-    { number: 0,
+    { id: t1,
+      number: 0,
       title: "The Fool",
-      description: "The Fool represents new beginnings, spontaneity, and a free spirit. It encourages taking a leap of faith and embracing the unknown."
+      cardOf: "",
+      description: ""
     },
     { number: 1,
       title: "The Magician",
