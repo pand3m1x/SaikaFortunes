@@ -52,6 +52,7 @@ function MoonPhase() {
     <div className="fortunes">
       <img src={MoonPhaseIcon} alt="phases of the moon in black and white in fancy boarder" style={{ width: '200px', height: 'auto' }} />
       <h2>{selectedPhase?.phase}</h2>
+      <p><strong>Keywords:</strong> {selectedPhase?.keywords}</p>
       <p>{selectedPhase?.description}</p>
     </div>
   );
