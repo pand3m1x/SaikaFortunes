@@ -1,8 +1,8 @@
 import blessMoon from "../assets/MoonFortuneIMG.png";
-import CatMarking from "../components/CatMarking";
-import MoonPhase from "../components/MoonPhase";
-import TarotCard from "../components/TarotCard";
-import TeaFlavor from "../components/TeaFlavor";
+import CatMarking from "../components/CatMarking.jsx";
+import MoonPhase from "../components/MoonPhase.jsx";
+import TarotCard from "../components/TarotCard.jsx";
+import TeaFlavor from "../components/TeaFlavor.jsx";
 
 // hooks
 import useSaveFortune from "../hooks/saveFortune.js";
