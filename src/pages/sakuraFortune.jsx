@@ -4,10 +4,14 @@ import MoonPhase from "../components/MoonPhase";
 import TarotCard from "../components/TarotCard";
 import TeaFlavor from "../components/TeaFlavor";
 
+import useSaveFortune from "../hooks/saveFortune.js";
+
 function SakuraFortune() {
+  const { fortuneRef, saveFortune } = useSaveFortune("sakura-fortune");
+
   return (
-  <>
-    <div className="fortune-container" >
+  <div className="fortunes">
+    <div className="fortune-container" ref={fortuneRef}>
       <div className="main-fortune" >
         <h1>Sakura Fortune</h1>
         <img src={blessSakura} alt="Sakura shape with the kanji for average luck." />
@@ -27,9 +31,9 @@ function SakuraFortune() {
             <CatMarking></CatMarking>
           </div>
         </div>
-        <button>save fortune</button>
     </div>
-  </> 
+        <button onClick={saveFortune}>save fortune</button>
+  </div> 
   );
 }
 

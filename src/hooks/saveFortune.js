@@ -8,10 +8,10 @@ function useSaveFortune( filename= "your-fortune") {
 
     if (!fortuneRef.current) return;
 
-    toJpeg(fortuneRef.current, { quality: 0.95, backgroundColor: "#ffffff" })
-    .then((dataUrk) => {
+    toJpeg(fortuneRef.current, { quality: 0.95, backgroundColor: "white" })
+    .then((dataUrl) => {
       const link = document.createElement("a");
-      link.download = '${filename}.jpeg';
+      link.download = `${filename}.jpeg`;
       link.href = dataUrl;
       link.click();
 

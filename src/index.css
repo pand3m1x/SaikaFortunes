@@ -35,7 +35,14 @@ button{
   cursor: pointer;
 }
 
-
+.fortunes{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 16px;
+}
 .fortune-container{
   display: flex;
   flex-direction: column;
