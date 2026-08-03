@@ -4,6 +4,7 @@ import MoonPhase from "../components/MoonPhase";
 import TarotCard from "../components/TarotCard";
 import TeaFlavor from "../components/TeaFlavor";
 
+// hooks
 import useSaveFortune from "../hooks/saveFortune.js";
 
 function SakuraFortune() {

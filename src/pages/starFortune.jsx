@@ -4,10 +4,15 @@ import MoonPhase from "../components/MoonPhase";
 import TarotCard from "../components/TarotCard";
 import TeaFlavor from "../components/TeaFlavor";
 
+// hooks
+import useSaveFortune from "../hooks/saveFortune.js";
+
 function StarFortune() {
+  const { fortuneRef, saveFortune } = useSaveFortune("star-fortune");
+
   return (
-    <>
-      <div className="fortune-container" >
+    <div className="fortunes">
+      <div className="fortune-container" ref={fortuneRef}>
         <div className="main-fortune" >
           <h1>Star Fortune</h1>
           <img src={blessStar} alt="star shape with kanji for middle luck." />
@@ -27,9 +32,9 @@ function StarFortune() {
             <CatMarking></CatMarking>
           </div>
         </div>
-        <button>save fortune</button>
+        <button onClick={saveFortune}>save fortune</button>
       </div>
-    </>
+    </div>
   );
 }
 

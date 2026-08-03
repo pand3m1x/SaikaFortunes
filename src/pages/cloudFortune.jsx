@@ -4,12 +4,16 @@ import MoonPhase from "../components/MoonPhase";
 import TarotCard from "../components/TarotCard";
 import TeaFlavor from "../components/TeaFlavor";
 
+// hooks
+import useSaveFortune from "../hooks/saveFortune.js";
+
 
 function CloudFortune() {
+  const { fortuneRef, saveFortune } = useSaveFortune("cloud-fortune");
 
   return (
-    <>
-      <div className="fortune-container" >
+    <div className="fortunes">
+      <div className="fortune-container" ref={fortuneRef}>
         <div className="main-fortune" >
           <h1>Cloud Fortune</h1>
           <img src={blessCloud} alt="Cloud shape with the kanji for little luck." />
@@ -29,9 +33,9 @@ function CloudFortune() {
             <CatMarking></CatMarking>
           </div>
         </div>
-        <button>save fortune</button>
+        <button onClick={saveFortune}>save fortune</button>
       </div>
-    </>
+    </div>
   );
 }
 
