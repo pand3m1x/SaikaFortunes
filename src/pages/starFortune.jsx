@@ -11,6 +11,7 @@ function StarFortune() {
   const { fortuneRef, saveFortune } = useSaveFortune("star-fortune");
 
   return (
+    
     <div className="fortunes">
       <div className="fortune-container" ref={fortuneRef}>
         <div className="main-fortune" >
@@ -34,6 +35,10 @@ function StarFortune() {
         </div>
       </div>
         <button onClick={saveFortune}>save fortune</button>
+        <div className="footer">
+          <p>a Saika collabortaion project!</p>
+          <p>&copy; 2026 Saika Cafe. All Rights Reserved.</p>
+        </div>
     </div>
   );
 }

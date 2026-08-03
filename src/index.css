@@ -102,6 +102,12 @@ button{
   margin: 5px 0px;
 }
 
+.footer p {
+  font-size: 12px;
+  color: #6f0689;
+  margin: 5px 0px;
+}
+
 @media (max-width: 768px) {
   .quarter-grid {
     grid-template-columns: 1fr;

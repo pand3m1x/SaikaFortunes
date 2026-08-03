@@ -1,7 +1,7 @@
 import { useRef, useCallback } from "react";
 import { toJpeg } from "html-to-image";
 
-function useSaveFortune( filename= "your-fortune") {
+function useSaveFortune( filename="your-fortune" ) {
   const fortuneRef = useRef(null);
 
   const saveFortune = useCallback( () => {
