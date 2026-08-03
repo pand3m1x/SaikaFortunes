@@ -11,7 +11,7 @@ function StarFortune() {
         <div className="main-fortune" >
           <h1>Star Fortune</h1>
           <img src={blessStar} alt="star shape with kanji for middle luck." />
-          <p>Your star fortune goes here.</p>
+          <p>Pretty good level of luck!</p>
         </div>
          <div className="quarter-grid">
           <div className="fortune-card" >

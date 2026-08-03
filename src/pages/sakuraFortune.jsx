@@ -11,7 +11,7 @@ function SakuraFortune() {
       <div className="main-fortune" >
         <h1>Sakura Fortune</h1>
         <img src={blessSakura} alt="Sakura shape with the kanji for average luck." />
-        <p>Your sakura fortune goes here.</p>
+        <p>Average level of luck.</p>
       </div>
         <div className="quarter-grid">
           <div className="fortune-card" >
