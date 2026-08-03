@@ -6,28 +6,36 @@ function MoonPhase() {
 
   const MoonPhases =[
     {phase: "New Moon",
-     description: "The New Moon represents new beginnings, fresh starts, and the potential for growth. It is a time to set intentions and plant seeds for the future."
+      keywords:"decision-making, taking action, beginnings",
+     description: "And suddenly you know: It's time to start something new and trust the magic of beginnings. —  Meister Eckhart"
     },
     {phase: "Waxing Crescent",
-     description: "The Waxing Crescent symbolizes growth, development, and the beginning of a new cycle. It encourages you to take action and nurture your ideas."
+      keywords:"growth, nurturing new intentions, first small steps",
+     description: "One can choose to go back toward safety or forward toward growth. Growth must be chosen again and again; fear must be overcome again and again. — Abraham Maslow"
     },
     {phase: "First Quarter",
-     description: "The First Quarter represents a time of decision-making and taking action. It signifies a balance between intuition and logic."
+      keywords:"decision-making; taking action",
+     description: "So. Tell me. What do you think? Which is better? To take action and perhaps make a fatal mistake - or to take no action and die slowly anyway? — Ahdaf Soueif"
     },
     {phase: "Waxing Gibbous",
-     description: "The Waxing Gibbous indicates a period of refinement and completion. It urges you to focus on details and make necessary adjustments."
+      keywords:"refinement, perseverance, and anticipation",
+     description: "True refinement seeks simplicity. — Bruce Lee"
     },
     {phase: "Full Moon",
-     description: "The Full Moon embodies culmination, realization, and the manifestation of your efforts. It is a time for celebration and reflection."
+      keywords:"illumination, culmination, fullness of life",
+     description: "It is impossible to grasp another human's inner world. But even in the darkness of the densest forest, there can always be the light of a firefly. — Krupakar"
     },
     {phase: "Waning Gibbous",
-     description: "The Waning Gibbous signifies letting go, releasing, and preparing for the next cycle. It encourages you to reflect on your journey and learn from your experiences."
+      keywords: "gratitude, transition, releasing, preparing for the next cycle",
+     description: "When things start to fall apart in your life, you feel as if your whole world is crumbling. But actually, it’s your fixed identity that’s crumbling. And that’s cause for celebration. — Pema Chödrön"
     },
-    {phase: "Last Quarter",
-     description: "The Last Quarter represents a time of closure, completion, and release. It urges you to let go of what no longer serves you."
+    {phase: "Third Quarter",
+      keywords: "releasing, forgiveness, and reflection",
+     description: "You can't forgive without loving. And I don't mean sentimentality. I don't mean mush. I mean having enough courage to stand up and say, 'I forgive. I'm finished with it'. — Maya Angelou"
     },
     {phase: "Waning Crescent",
-     description: "The Waning Crescent symbolizes rest, introspection, and preparation for the next new moon. It is a time for rest and renewal."
+      keywords:"rest, release, and quiet preparation",
+     description: "When life is difficult, it's best to just sleep and eat good food. The spirit heals itself when the body is cared for.  — Banana Yoshimoto"
     }
   ];
 
