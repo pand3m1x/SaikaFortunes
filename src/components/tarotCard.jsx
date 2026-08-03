@@ -9,7 +9,7 @@ function TarotCard() {
       number: 0,
       title: "The Fool",
       cardOf: "A Card of New Beginning: ",
-      description: "You are heading towards a new experience. Have courage as you move forward, you may not be prepared but along the way you will learn and discover your potential. "
+      description: "You are heading towards a new experience. Have courage as you move forward, you may not be prepared but along the way you will learn and discover your potential."
     },
     { id: "t2",
       number: 1,
@@ -129,13 +129,13 @@ function TarotCard() {
       number: 20,
       title: "Judgement:",
       cardOf: "A Card of Reflection:",
-      description: ""
+      description: "It's time to look back at all you're done for good and ill. Important changes are ahead and it's time to prepare by deciding on the best version of yourself. Let the past guide you and then let go of it. It is time to keep moving."
     },
     { id: "t22",
       number: 21,
       title: "The World:",
       cardOf: "A Card of You:",
-      description: "Look at you. All you've achieved after all this time. All of the struggles you overcame. Remember all that you achieved, and rember that you can do more. A new journey with new oppertunities. You've made it this far, now keep going. "
+      description: "Look at you. All you've achieved after all this time. All of the struggles you overcame. Remember all that you achieved, and rember that you can do more. A new journey with new oppertunities. You've made it this far, now keep going."
     },
     
   ];
