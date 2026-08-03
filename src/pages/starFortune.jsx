@@ -33,12 +33,12 @@ function StarFortune() {
             <CatMarking></CatMarking>
           </div>
         </div>
-      </div>
-        <button onClick={saveFortune}>save fortune</button>
         <div className="footer">
           <p>a Saika collabortaion project!</p>
           <p>&copy; 2026 Saika Cafe. All Rights Reserved.</p>
         </div>
+      </div>
+        <button onClick={saveFortune}>save fortune</button>
     </div>
   );
 }
