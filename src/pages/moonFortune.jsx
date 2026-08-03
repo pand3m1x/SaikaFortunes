@@ -27,6 +27,7 @@ function MoonFortune() {
           <CatMarking></CatMarking>
         </div>
       </div>
+      <button>save fortune</button>
     </div>
   );
 }

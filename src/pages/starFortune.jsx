@@ -27,6 +27,7 @@ function StarFortune() {
             <CatMarking></CatMarking>
           </div>
         </div>
+        <button>save fortune</button>
       </div>
     </>
   );
