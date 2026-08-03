@@ -32,8 +32,8 @@ function StarFortune() {
             <CatMarking></CatMarking>
           </div>
         </div>
-        <button onClick={saveFortune}>save fortune</button>
       </div>
+        <button onClick={saveFortune}>save fortune</button>
     </div>
   );
 }

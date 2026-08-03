@@ -9,7 +9,7 @@ import useSaveFortune from "../hooks/saveFortune.js";
 
 function MoonFortune() {
   const { fortuneRef, saveFortune } = useSaveFortune("moon-fortune");
-  
+
   return (
     <div className="fortunes">
       <div className="fortune-container" ref={fortuneRef}>
@@ -32,8 +32,8 @@ function MoonFortune() {
             <CatMarking></CatMarking>
           </div>
         </div>
-        <button onClick={saveFortune}>save fortune</button>
       </div>
+        <button onClick={saveFortune}>save fortune</button>
     </div>
   );
 }
