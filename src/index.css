@@ -108,6 +108,36 @@ button{
   margin: 5px 0px;
 }
 
+.saved-message {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  max-width: 80vw;
+  transform: translateX(-50%);
+  background-color: white;
+  border: 3px solid rgba(232, 196, 241, 0.918);
+  border-radius: 10px;
+  padding: 16px 20px;
+  margin: 10px;
+  box-shadow: 0 4px 15px rgba(127, 78, 159, 0.56);
+  max-width: 90vw;
+  width: 320px;
+  text-align: center;
+  z-index: 1000;
+  animation: slideUp 0.3s ease-out;
+}
+
+@keyframes slideUp {
+  from {
+    transform: translate(-50%, 20px);
+    opacity: 0;
+  }
+  to {
+    transform: translate(-50%, 0);
+    opacity: 1;
+  }
+}
+
 @media (max-width: 768px) {
   .quarter-grid {
     grid-template-columns: 1fr;
