@@ -8,7 +8,7 @@ import TeaFlavor from "../components/TeaFlavor.jsx";
 import useSaveFortune from "../hooks/saveFortune.js";
 
 function MoonFortune() {
-  const { fortuneRef, saveFortune } = useSaveFortune("moon-fortune");
+  const { fortuneRef, saveFortune, showSavedMessage, clearSavedMessage } = useSaveFortune("moon-fortune");
 
   return (
     <div className="fortunes">
@@ -38,6 +38,13 @@ function MoonFortune() {
         </div>
       </div>
           <button onClick={saveFortune}>save fortune</button>
+          {showSavedMessage && (
+            <div className="saved-message">
+              <p>Fortune saved successfully!</p>
+              <p id="mobile-notification">mobile users - check your downloads folder if it doesn't appear in photo reel</p>
+              <button onClick={ clearSavedMessage }>Close</button>
+            </div>
+          )}
     </div>
   );
 }

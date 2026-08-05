@@ -41,7 +41,7 @@ function SakuraFortune() {
           {showSavedMessage && (
             <div className="saved-message">
               <p>Fortune saved successfully!</p>
-              <p id="mobile-notification">mobile users - check your downloads folder if it doesn't appear in photo reel</p>
+              <p id="mobile-notification">mobile users - check your downloads folder if it doesn't appear in your photo reel</p>
               <button onClick={ clearSavedMessage }>Close</button>
             </div>
           )}

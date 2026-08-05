@@ -9,7 +9,7 @@ import useSaveFortune from "../hooks/saveFortune.js";
 
 
 function CloudFortune() {
-  const { fortuneRef, saveFortune } = useSaveFortune("cloud-fortune");
+  const { fortuneRef, saveFortune, showSavedMessage, clearSavedMessage } = useSaveFortune("cloud-fortune");
 
   return (
     <div className="fortunes">
@@ -39,6 +39,13 @@ function CloudFortune() {
         </div>
       </div>
           <button onClick={saveFortune}>save fortune</button>
+          {showSavedMessage && (
+            <div className="saved-message">
+              <p>Fortune saved successfully!</p>
+              <p id="mobile-notification">mobile users - check your downloads folder if it doesn't appear in photo reel</p>
+              <button onClick={ clearSavedMessage }>Close</button>
+            </div>
+          )}
     </div>
   );
 }

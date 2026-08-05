@@ -8,7 +8,7 @@ import TeaFlavor from "../components/TeaFlavor.jsx";
 import useSaveFortune from "../hooks/saveFortune.js";
 
 function StarFortune() {
-  const { fortuneRef, saveFortune } = useSaveFortune("star-fortune");
+  const { fortuneRef, saveFortune, showSavedMessage, clearSavedMessage } = useSaveFortune("star-fortune");
 
   return (
     
@@ -39,6 +39,13 @@ function StarFortune() {
         </div>
       </div>
         <button onClick={saveFortune}>save fortune</button>
+        {showSavedMessage && (
+            <div className="saved-message">
+              <p>Fortune saved successfully!</p>
+              <p id="mobile-notification">mobile users - check your downloads folder if it doesn't appear in photo reel</p>
+              <button onClick={ clearSavedMessage }>Close</button>
+            </div>
+          )}
     </div>
   );
 }
