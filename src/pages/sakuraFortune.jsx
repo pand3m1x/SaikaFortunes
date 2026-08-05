@@ -8,7 +8,7 @@ import TeaFlavor from "../components/TeaFlavor.jsx";
 import useSaveFortune from "../hooks/saveFortune.js";
 
 function SakuraFortune() {
-  const { fortuneRef, saveFortune } = useSaveFortune("sakura-fortune");
+  const { fortuneRef, saveFortune, showSavedMessage, clearSavedMessage } = useSaveFortune("sakura-fortune");
 
   return (
   <div className="fortunes">
@@ -37,8 +37,15 @@ function SakuraFortune() {
           <p>&copy; 2026 Saika Cafe. All Rights Reserved.</p>
         </div>
     </div>
-          <button onClick={saveFortune}>save fortune</button>
-  </div> 
+          <button onClick={ saveFortune }>save fortune</button>
+          {showSavedMessage && (
+            <div className="saved-message">
+              <p>Fortune saved successfully!</p>
+              <p id="mobile-notification">mobile users - check your downloads folder if it doesn't appear in photo reel</p>
+              <button onClick={ clearSavedMessage }>Close</button>
+            </div>
+          )}
+    </div>
   );
 }
 
