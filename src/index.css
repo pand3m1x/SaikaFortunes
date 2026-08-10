@@ -35,6 +35,20 @@ button{
   cursor: pointer;
 }
 
+#omikuji-image{
+  width: 350px; 
+  max-width: 60vw;
+  height: auto;
+  margin: 5px 0px;
+}
+
+.omikuji-p{
+  margin:5px 0px;
+}
+
+#italic-p{
+  font-style: italic;
+}
 .fortunes{
   display: flex;
   flex-direction: column;
