@@ -34,7 +34,7 @@ function CloudFortune() {
           </div>
         </div>
         <div className="footer">
-          <p>a Saika collabortaion project!</p>
+          <p>a <a href="https://www.saikacafe.com/">Saika Cafe</a> collabortaion project!</p>
           <p>&copy; 2026 Saika Cafe. All Rights Reserved.</p>
         </div>
       </div>
