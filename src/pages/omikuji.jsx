@@ -28,19 +28,26 @@ function Omikuji() {
   return (
 
     <div className="fortune-container">
+
       <div className="omikuji-section">
+
         <h1>Saika Fortune Teller</h1>
         <p className="omikuji-p">Welcome to the Saika Cafe Omikuji page! </p>
         <p className="omikuji-p">Here you can draw your fortune.</p>
         <img id="omikuji-image" src={omikujiIMG} alt="Japanese Omikuji fortune box" />
         <p className="omikuji-p" id="italic-p">Click the button below to draw your fortune!</p>
-        <button onClick={handleDrawFortune}>Draw Fortune</button>
+
+        <button onClick={handleDrawFortune}>draw fortune</button>
+
       </div>
+
         <div className="footer">
+
           <p>a <a href="https://www.saikacafe.com/">Saika Cafe</a> collabortaion project!</p>
           <p>&copy; 2026 Saika Cafe. All Rights Reserved.</p>
+
         </div>
-      {/* Add your Omikuji functionality here */}
+        
     </div>
 
   );
