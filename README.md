@@ -6,6 +6,7 @@ When drawing fortunes from the page, fortunes are at
 sakura = 50% ; cloud = 25% ; star = 15% ; moon = 10%
 
 website:
+https://saikafortuneteller.netlify.app/
 
                                               ⠀⠀⠀⠀⠀⢠⣿⡆⠀⠀⠀⠀⠀
                                               ⠀⠀⠀⠀⢰⡟⠀⠹⡆⠀⠀⠀⠀
