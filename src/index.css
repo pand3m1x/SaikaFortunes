@@ -35,6 +35,8 @@ button{
   cursor: pointer;
 }
 
+/* omikuji page */
+
 #omikuji-image{
   width: 350px; 
   max-width: 60vw;
@@ -60,6 +62,8 @@ button{
 #italic-p{
   font-style: italic;
 }
+
+/* fortunes page */
 .fortunes{
   display: flex;
   flex-direction: column;
